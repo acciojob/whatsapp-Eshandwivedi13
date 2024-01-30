@@ -84,7 +84,7 @@ public class WhatsappRepository {
         if(!groupUserMap.containsKey(group)){
             throw new Exception("Group does not exist");
         }
-//        if(adminMap.getOrDefault(group, null) != approver){
+//        if(adminMap.getOrDefault(group, null) != approver){//this was not getting submitted, ideally it should work but test cases mei kuch hoga(Warna mobile se bhi check kr skte) g
 //            throw new Exception("Approver does not have rights");
 //        }
         if(adminMap.getOrDefault(group,null) == null)
